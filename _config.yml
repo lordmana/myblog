@@ -13,16 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Lordmana's personal blog
-email: lordmana@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Lordmana's daily life # title of the blog
+email: lordmana@gmail.com         
+# SEOTitle: 			
+description: about software engineering, fiction novel writing, design, culture and history  
+# description  >- # this means to ignore newlines until "baseurl:"
+# Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://lordmana.com" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  lordmana
 
 # Build settings
 markdown: kramdown
@@ -32,6 +34,16 @@ theme_color: blue
 plugins:
   - jekyll-feed
 repository: lordmana/myblog
+paginate: 12          # nums of posts in one page
+
+defaults:
+- 
+  scope:
+    path: "" # an empty string here means all files in the project
+    type: "posts"
+  values:
+    author: Lordmana
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
